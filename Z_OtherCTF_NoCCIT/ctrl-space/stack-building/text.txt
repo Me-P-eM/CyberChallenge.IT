@@ -1,0 +1,12 @@
+Welcome to our virtual satellite!
+
+The following endpoints allows you to retrieve the 3 parts of the full flag:
+
+Link layer at :10015
+Channel coding at :10016
+Modulated signal at :10017
+Please read the attached file carefully to get how the communication stack is built and how to use the taps provided at different parts of the stack.
+
+nc *** 10015
+nc *** 10016
+nc *** 10017

@@ -1,0 +1,9 @@
+services:
+  agent_1337:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "6003:80"
+    volumes:
+      - ./app/index.php:/var/www/html/index.php
+      - ./flag.txt:/flag.txt

@@ -1,0 +1,13 @@
+- Controlla se il messaggio è di un cifrario (https://www.dcode.fr/cipher-identifier)
+- Usare "mtp file-criptato"
+- Per fare bruteforce:
+    for comb in itertools.product(CHARSET, repeat=LENGTH):
+        k = ''.join(comb)
+        print(k)
+- Usa i dizionari per vedere se un valore è presente in un dataset (if el in d)
+- RSA:
+    n = p * q
+    totient = (p - 1) * (q - 1)
+    d = pow(e, -1, totient)
+    m = pow(c, d, n)
+    c = pow(m, e, n)

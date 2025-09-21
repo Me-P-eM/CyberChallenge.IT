@@ -1,0 +1,3 @@
+Everything is just a string of 0s and 1s
+
+nc *** 1942

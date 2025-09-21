@@ -1,0 +1,9 @@
+services:
+  not_a_collision:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "6002:80"
+    volumes:
+      - ./app/index.php:/var/www/html/index.php
+      - ./app/home.php:/var/www/html/home.php

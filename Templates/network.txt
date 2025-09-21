@@ -1,0 +1,13 @@
+- .pcap da aprire con wireshark
+
+- Filtri (esempi):
+    View -> Coloring Rules...
+    Aggiungi il filtro:
+    frame contains "flag"
+
+    ip.src==192.168.100.1 and ip.dst==192.168.100.2
+
+- Vedere i bytes di un pacchett (es pacchetto con tag PNG):
+    "MIME" -> "Encapsulated", tasto destro su "Portable" -> "Show Packet Bytes"
+
+- Segui i flussi http o tcp!

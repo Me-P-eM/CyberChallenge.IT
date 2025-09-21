@@ -1,0 +1,19 @@
+- Analisi statica: ghidra
+    - Cerca nelle funzioni main o quella di partenza
+    - Cambia il nome delle variabili se capisci quali sono
+
+- Analisi dinamica: pwndbg
+    - Breakpoint: break main / break *0x0040124b
+    - Avvia il programma: run
+    - Prosegui di un'istruzione: next
+    - Continua l'esecuzione: continue
+    - Elimina breakpoint: delete
+    - Impostare un indirizzo a NOP: set {unsigned char} 0x0040124b = 0x90
+    - Leggere una stringa in un indirizzo di memoria: x/s 0x7fffffffda70
+    - Per fare buffer overflow:
+        - Trova l'offset tramite "cyclic [numero sufficientemente grande per raggiungere l'indirizzo di interesse]"
+        - Runna e nell'input inserisci la stringa che ti è stata generata
+        - Vedi se nel registro di interesse trovi parte della stringa che ti ha generato cyclic
+        - Ottieni l'offset facendo "cyclic --offset [stringa nel registro]"
+        - Ottieni l'indirizzo dell'istruzione che vuoi eseguire: "info function"
+        - A questo punto fai: "payload = b'A' * offset + p64(indirizzo)"

@@ -1,0 +1,10 @@
+services:
+  brr_brr_patapim:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "6006:6006"
+    volumes:
+      - ./app:/app
+    environment:
+      FLAG: "flag{br4inr00t_4nim4ls_4r3_4m4zing!}"

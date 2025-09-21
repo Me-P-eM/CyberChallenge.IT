@@ -1,0 +1,3 @@
+Stop generating new nonces all the time — help save the planet!
+
+nc 10.42.0.2 38083

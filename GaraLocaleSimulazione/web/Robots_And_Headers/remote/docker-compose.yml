@@ -1,0 +1,10 @@
+services:
+  robots_and_headers:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "6001:6001"
+    volumes:
+      - ./app:/app1
+    environment:
+      FLAG: "flag{m4yb3_a_s4n1ty_ch3ck?}"

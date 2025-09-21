@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  cat_viewer:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "6004:80"
+    environment:
+      DB_HOST: db
+      DB_NAME: imgdb
+      DB_USER: imguser
+      DB_PASS: imgpass
+    depends_on:
+      - db
+    volumes:
+      - ./app/index.php:/var/www/html/index.php
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: imgdb
+      MYSQL_USER: imguser
+      MYSQL_PASSWORD: imgpass
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./set_privileges.sql:/docker-entrypoint-initdb.d/set_privileges.sql

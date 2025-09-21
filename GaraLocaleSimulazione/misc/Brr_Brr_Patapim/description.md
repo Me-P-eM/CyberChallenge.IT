@@ -1,0 +1,1 @@
+Nel bosco fitto e misterioso viveva un essere assai curioso. Con radici intrecciate e gambe incrociate, mani sottili, braccia agitate. Il suo naso lungo come un prosciutto, un po' babbuino, un po' cespugliotto. Si chiamava Patapim, oh che strano, e parlava Italiano…

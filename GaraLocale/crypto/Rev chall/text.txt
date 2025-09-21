@@ -1,0 +1,3 @@
+In every reversing challenge you have to give the flag as input. Here we will rate you as a rev player.
+
+nc 10.42.0.2 38082
