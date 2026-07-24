@@ -1,8 +1,8 @@
 # CyberChallenge.IT - Materiale del Corso
 
-![Status](https://img.shields.io/badge/status-in%20aggiornamento-yellow)
-![Contributions](https://img.shields.io/badge/contributions-welcome-blue)
-![Cybersecurity](https://img.shields.io/badge/topic-cybersecurity-orange)
+![Stato](https://img.shields.io/badge/stato-completato-green)
+![Contributi](https://img.shields.io/badge/contributi-benvenuti-blue)
+![Argomento](https://img.shields.io/badge/tema-cybersecurity-orange)
 
 Questa repository contiene materiale didattico complementare al corso **CyberChallenge.IT** (teoria, appunti, esercitazioni e write-up).  
 Non include i materiali ufficiali distribuiti dal **CINI**, che non possono essere condivisi per motivi di privacy.
@@ -67,8 +67,7 @@ Write-up e documentazione delle competizioni svolte durante il programma:
 ├── GaraNazionale/              # Challenge della gara nazionale
 ├── GaraNazionaleSimulazione/   # Challenge della simulazione della gara nazionale
 ├── SpeedRun/                   # Challenge della SpeedRun alle nazionali
-├── Templates/                  # Template di codice e tips
-└── Z_OtherCTF_NoCCIT/          # Challenge di altre CTF
+└── Templates/                  # Template di codice e tips
 ```
 
 ## Tool e Prerequisiti
